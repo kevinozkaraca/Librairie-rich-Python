@@ -12,6 +12,55 @@
   <img align="center" width="80%" alt="exemple de présentation" src="image2.png"/>
 </p>
 <br/>
+<p>
+----------- Installation de la librairie rich
+ 
+    # Dans le terminal
+>   pip install rich
+    # Affiche les fonctionnalités de la librairie
+>   python -m rich
+
+----------- Importation des fonctionnalités
+ 
+    # Importe les fonctionnalités
+from rich import print
+from rich.table import Table
+from rich.console import Console
+from rich.progress import track
+import time
+
+----------- Fonctionnalité du print
+
+    # ecrire en gras
+print("[bold]Ce que je veux)"
+    # écrire rouge sur blanc
+print("[red on white]plein de cadeau")
+    # écrire une partie seulement rouge sur blanc
+print("[red on white]plein[/] de cadeau")
+
+----------- Faire un tableau
+
+table = Table(title="Tableau de test")
+
+table.add_column("Colonne1", style="cyan")
+table.add_column("Colonne2", style="magenta")
+table.add_column("Colonne3", style="white")
+table.add_column("Colonne4", style="white")
+
+table.add_row("info1", "info2", "info3", "info4")
+table.add_row("info1", "info2", "info3", "info4")
+table.add_row("info1", "info2", "info3", "info4")
+
+table.add_row("info1", "info2", "info3", "info4")
+
+console = Console()
+console.print(table)
+
+----------- Faire une barre de progression
+
+for i in track(range(100), description= "Chargement en cours"):
+    time.sleep(0.1)
+</p>
 
 ### Mes reseaux sociaux : 
 
