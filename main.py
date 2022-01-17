@@ -67,12 +67,15 @@ for i in track(range(100), description= "Chargement en cours"):
 
 # Les exemples du print
 print(presentation)
-time.sleep(1)
-print("[bold]Ce que je veux")
-print("[red on white]plein de cadeau")
-print("[red on white]plein[/] de cadeau")
 
 time.sleep(1)
+
+print("[bold]Ce que je veux")
+print("[red on white]plein de cadeaux")
+print("[red on white]plein[/] de cadeaux")
+
+time.sleep(1)
+
 # Exemple de tableau
 
 table = Table(title="Tableau de test")
@@ -92,10 +95,12 @@ console = Console()
 console.print(table)
 
 time.sleep(1)
+
 # Exemple de barre de progression
 
 for i in track(range(100), description= "Chargement en cours"):
     time.sleep(0.1)
 
 time.sleep(1)
+
 print("Fin du programme")
