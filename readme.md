@@ -12,70 +12,90 @@
   <img align="center" width="80%" alt="exemple de présentation" src="image2.png"/>
 </p>
 <br/>
+
+<p align="center">Voir le code dans le fichier main pour une meilleure présentation<p>
 <p>
 ----------- Installation de la librairie rich
  
     # Dans le terminal
 
->   pip install rich
+>   <code> pip install rich </code>
 
     # Affiche les fonctionnalités de la librairie
 
->   python -m rich
+>   <code> python -m rich </code>
 
 ----------- Importation des fonctionnalités
  
     # Importe les fonctionnalités
 
-from rich import print
-from rich.table import Table
-from rich.console import Console
-from rich.progress import track
+<code>
+from rich import print<br/>
+from rich.table import Table<br/>
+from rich.console import Console<br/>
+from rich.progress import track<br/>
 import time
+</code>
 
 ----------- Fonctionnalité du print
 
     # ecrire en gras
 
-print("[bold]Ce que je veux)"
+<code>
+print("[bold]Ce que je veux)"<br/>
+</code>
 
     # écrire rouge sur blanc
 
-print("[red on white]plein de cadeau")
+<code>
+print("[red on white]plein de cadeau")<br/>
+</ode>
 
     # écrire une partie seulement rouge sur blanc
 
-print("[red on white]plein[/] de cadeau")
+<code>
+print("[red on white]plein[/] de cadeau")<br/>
+</code>
 
 ----------- Faire un tableau
 
     # Titre du tableau
 
-table = Table(title="Tableau de test")
+<code>
+table = Table(title="Tableau de test")<br/>
+</code>
 
     # Colonnes
 
-table.add_column("Colonne1", style="cyan")
-table.add_column("Colonne2", style="magenta")
-table.add_column("Colonne3", style="white")
-table.add_column("Colonne4", style="white")
+<code>
+table.add_column("Colonne1", style="cyan")<br/>
+table.add_column("Colonne2", style="magenta")<br/>
+table.add_column("Colonne3", style="white")<br/>
+table.add_column("Colonne4", style="white")<br/>
+</code>
 
     # lignes
 
-table.add_row("info1", "info2", "info3", "info4")
-table.add_row("info1", "info2", "info3", "info4")
-table.add_row("info1", "info2", "info3", "info4")
-table.add_row("info1", "info2", "info3", "info4")
+<code>
+table.add_row("info1", "info2", "info3", "info4")<br/>
+table.add_row("info1", "info2", "info3", "info4")<br/>
+table.add_row("info1", "info2", "info3", "info4")<br/>
+table.add_row("info1", "info2", "info3", "info4")<br/>
+</code>
 
     # Affichage du tableau
 
-console = Console()
-console.print(table)
+<code>
+console = Console()<br/>
+console.print(table)<br/>
+</code>
 
 ----------- Faire une barre de progression
 
-for i in track(range(100), description= "Chargement en cours"):
+<code>
+for i in track(range(100), description= "Chargement en cours"):<br/>
     time.sleep(0.1)
+</code>
 </p>
 
 ### Mes reseaux sociaux : 
